@@ -5,10 +5,11 @@
       <span class="iconfont search">&#xe632;</span>
       <input type="text" placeholder="输入城市/游玩景点/主题">
     </div>
+    <router-link to="/city" class="link">
     <div class="city">
       <span class="name">{{this.city}}</span>
       <span class="iconfont">&#xe64a;</span>
-    </div>
+    </div></router-link>
   </div>
 </template>
 
@@ -47,12 +48,14 @@ export default {
         height: 20px
         border: 0px
         outline: none
-    .city
-      color: #fff
-      font-size: 14px
-      text-align: center
-      width: 54px
-      height: 31px
-      margin: 6px 0 6px 0
-      line-height: 31px
+    .link
+      text-decoration: none  
+      .city
+        color: #fff
+        font-size: 14px
+        text-align: center
+        width: 54px
+        height: 31px
+        margin: 6px 0 6px 0
+        line-height: 31px
 </style>

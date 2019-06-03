@@ -10,6 +10,11 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/city',
+      name: 'City',
+      component: () => import('@/pages/city/City')
     }
   ],
   mode: 'history'
