@@ -5,6 +5,10 @@ import App from './App'
 import router from './router'
 import "./assets/styles/iconfont.css"
 import store from './store/index'
+import vueSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+
+Vue.use(vueSwiper);
 
 Vue.config.productionTip = false
 
