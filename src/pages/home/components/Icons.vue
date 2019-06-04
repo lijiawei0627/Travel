@@ -2,7 +2,7 @@
   <div class="wrapper">
     <swiper :options="swiperOption">
       <swiper-slide v-for="(page, index) in pages" :key="index">
-          <div class="icon" v-for="item in page" :key="item.id">
+        <div class="icon" v-for="item in page" :key="item.id">
           <img :src="item.imgUrl" alt="">
           <p v-text="item.desc"></p>
         </div>
@@ -45,16 +45,17 @@ export default {
   margin-top: 8px
   width: 100%
   height: 0
+  margin-bottom: 200px
   .icon
     float: left
     width: 25%
     overflow: hidden
-  img 
-    display: block
-    width: 70%
-    margin: 0 auto
-  p
-    font-size: 14px
-    text-align: center
-    margin-top: 4px
+    img 
+      display: block
+      width: 70%
+      margin: 0 auto
+    p
+      font-size: 14px
+      text-align: center
+      margin-top: 4px
 </style>
