@@ -1,13 +1,18 @@
 <template>
   <div class="city">
-    <span class="iconfont">&#xe624;</span>
+    <span class="iconfont" @click="back">&#xe624;</span>
     <div class="title">城市选择</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "CityHeader"
+  name: "CityHeader",
+  methods: {
+    back () {
+      this.$router.push('./')
+    } 
+  }
 }
 </script>
 
@@ -29,4 +34,5 @@ export default {
     line-height: 43px
     margin: 0 auto
     color: #ffffff
+    text-align: center
 </style>
