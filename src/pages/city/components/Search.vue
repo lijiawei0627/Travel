@@ -5,13 +5,18 @@
 </template>
 
 <script>
+import Bscroll from 'better-scroll'
 export default {
-  
+  name: "CitySearch",
+  mounted() {
+    // this.scroll = new Bscroll(this.$refs.search)
+  }
 }
 </script>
 
 <style lang="stylus" scoped>
 .search
+  margin: 0
   background-color: #00bcd4
   height: 37px
   input
