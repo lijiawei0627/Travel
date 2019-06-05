@@ -16,5 +16,12 @@ export default new Router({
       component: () => import('@/pages/city/City')
     }
   ],
+  //每次刷新回到页面顶部
+  scrollBehavior(to, from,savedPosition) {
+    return {
+      x: 0,
+      y: 0
+    }
+  },
   mode: 'history'
 })

@@ -3,5 +3,7 @@ if (localStorage.city) {
   defaultData = localStorage.city
 }
 export default {
-  city: defaultData
+  city: defaultData,
+  hasData: true,
+  show: true
 }

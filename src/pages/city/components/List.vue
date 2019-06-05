@@ -1,5 +1,5 @@
 <template>
-  <div class="list" ref="wrapper">
+  <div class="list" ref="wrapper" v-show="show">
     <div>
       <div class="before">当前城市</div>
       <div class="before-city">{{city}}</div>
@@ -24,7 +24,7 @@ import {mapState, mapMutations} from 'vuex'
 export default {
   name: "CityList",
   computed: {
-    ...mapState(['city']) 
+    ...mapState(['city','show']) 
   },
   props: {
     list: Array,
