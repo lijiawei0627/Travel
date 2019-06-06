@@ -99,9 +99,9 @@ export default {
         margin-top: 0
         height: 37.6px
         line-height: 37.6px
-        padding-left: 10px
         font-size: 14px
         color: #333
+        margin-left: -10px
         border-bottom: 0.01rem solid #ccc
       li
         list-style: none;

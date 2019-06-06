@@ -58,7 +58,7 @@ export default {
 .before-city
   height: 25.6px
   line-height: 25.6px
-  width: 25%
+  width: 30%
   margin: 9px
   text-align: center
   border: 1px solid #ccc
